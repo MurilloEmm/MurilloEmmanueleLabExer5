@@ -7,12 +7,13 @@
 
     <ImageView
         android:id="@+id/tbLogo"
-        android:layout_width="wrap_content"
+        android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         tools:srcCompat="@tools:sample/avatars[4]" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="411dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -20,19 +21,47 @@
 
         <TextView
             android:id="@+id/tbName"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="TextView"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:layout_conversion_absoluteHeight="18dp"
+            tools:layout_conversion_absoluteWidth="347dp"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="0dp" />
 
         <TextView
-            android:id="@+id/tbDate"
+            android:id="@+id/tbCo"
             android:layout_width="wrap_content"
-            android:layout_height="581dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="TextView"
-            android:textSize="18sp" />
+            android:textSize="17sp"
+            tools:layout_conversion_absoluteHeight="18dp"
+            tools:layout_conversion_absoluteWidth="125dp"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <TextView
+            android:id="@+id/tbInd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="17sp"
+            tools:layout_conversion_absoluteHeight="18dp"
+            tools:layout_conversion_absoluteWidth="125dp"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <TextView
+            android:id="@+id/tbC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:layout_conversion_absoluteHeight="566dp"
+            tools:layout_conversion_absoluteWidth="123dp"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="36dp" />
 
     </LinearLayout>
 </LinearLayout>

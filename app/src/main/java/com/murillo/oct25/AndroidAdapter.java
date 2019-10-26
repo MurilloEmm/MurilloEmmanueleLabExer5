@@ -29,19 +29,26 @@ public class AndroidAdapter extends ArrayAdapter<AndroidVersion> {
         int logo = getItem(i).getLogo();
         String version = getItem(i).getName();
         String date = getItem(i).getrDate();
+        String ceo = getItem(i).getCeoName();
+        String industry = getItem(i).getIndName();
+
 
         LayoutInflater inflater = LayoutInflater.from(context);
         convertView = inflater.inflate(resource, parent, false);
 
         ImageView img = convertView.findViewById(R.id.tbLogo);
         TextView verName = convertView.findViewById(R.id.tbName);
-        TextView rDate = convertView.findViewById(R.id.tbDate);
+        TextView indN = convertView.findViewById(R.id.tbInd);
+        TextView ceoN = convertView.findViewById(R.id.tbC);
+        TextView rDate = convertView.findViewById(R.id.tbCo);
 
         img.setImageResource(logo);
         verName.setText(version);
+        indN.setText(industry);
+        ceoN.setText(ceo);
         rDate.setText(date);
         return convertView;
-        }
     }
+}
 
 
