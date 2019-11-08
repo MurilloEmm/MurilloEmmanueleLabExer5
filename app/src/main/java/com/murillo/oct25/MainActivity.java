@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
-                    Toast.makeText(MainActivity.this, description[i], Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, verName[i], Toast.LENGTH_LONG).show();
 
                 }
 
