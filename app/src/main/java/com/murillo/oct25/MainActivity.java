@@ -53,9 +53,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         File file = new File(folder, "company.txt");
         try {
             FileOutputStream fos = new FileOutputStream(file);
-            String choice = verName[i];
+            String choice = description[i];
             fos.write(choice.getBytes());
-            Toast.makeText(this, verName[i], Toast.LENGTH_LONG).show();
             AlertDialog.Builder dialog = new AlertDialog.Builder(this);
             dialog.setIcon(logo[i]);
             dialog.setTitle(verName[i]);
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
-                    Toast.makeText(MainActivity.this, verName[i], Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, verName[i]+ dates[i]+ceo[i], Toast.LENGTH_LONG).show();
 
                 }
 
